@@ -1,0 +1,11 @@
+*{ // Reset styles - Seletor universal o qual essas regras abaixo vão ser aplicadas
+    margin: 0; //Remove todas as margens padrão que o navegador aplica
+    padding: 0; //Remove todo o enchimento que o navegador aplica
+    box-sizing: border-box; //Inclui o preenchimento e a borda na largura e altura totais do elemento
+}
+
+.container{
+    max-width: 960px; //Define a largura máxima do contêiner
+    width: 100%; //Define a largura do contêiner para ocupar 100% do espaço disponível
+    margin: 0 auto; //Centraliza o contêiner horizontalmente
+}
