@@ -1,10 +1,13 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
 
 *{ // Reset styles - Seletor universal o qual essas regras abaixo vão ser aplicadas
     margin: 0; //Remove todas as margens padrão que o navegador aplica
     padding: 0; //Remove todo o enchimento que o navegador aplica
     box-sizing: border-box; //Inclui o preenchimento e a borda na largura e altura totais do elemento
     font-family: merriweather, sans-serif;
+    list-style: none; //remove os pontos das listas
 }
 
 .container{ //essa classe vai centralizar o conteudo de todo site, ainda não esta dividido
