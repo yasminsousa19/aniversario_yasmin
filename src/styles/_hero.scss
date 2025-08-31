@@ -1,0 +1,43 @@
+.hero{
+    padding-top: 64px; //espaço acima do hero
+    padding-bottom: 450px; //espaço abaixo do hero
+    background-image: url(../images/cake.jpg); //adiciona a imagem de fundo, obs: o ../ sai de uma pasta para entrar em outra
+    background-repeat: no-repeat; //faz a imagem não se repetir
+    background-size: cover; //faz a imagem cobrir todo o espaço do container
+    position: relative; //faz o pseudo seletor &:: funcionar serve de base para o ::before
+
+    .container {
+        position: relative; //faz o pseudo seletor &:: funcionar serve de base para o ::before
+    }
+
+    &::before{ //isso é um pseudo elemento que cria como se fosse uma camada acima do hero
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        content: '';
+        opacity: 0.7;
+    }
+
+    &__text{ //para selecionar nesse modo se adiciona a classe no html que esta no nome do arquivo + sua função por exemplo: hero__text
+        margin-top: 200px; //espaçamento acima do texto
+        margin-bottom: 64px; //espaçamento abaixo do texto
+        font-size: 40px; //tamanho da fonte
+        line-height: 56px; //altura da linha
+        color: white; //cor do texto
+        font-weight: 800; //peso da fonte
+        text-align: center; //alinha o texto ao centro
+    }
+
+    @media (max-width: 640px){ //para telas de celular, ALINHAMENTO DA HERO EM TELAS DE CELULAR
+        padding: 40px 0; //espaçamento acima e abaixo do hero em telas de celula, ESSA IDENTAÇÃO, SIGNIFICA QUE ESSE PADDING VAI SER INCLUSO EM TODO HERO, ENTÃO NÃO PRECISO COLOCAR DE NOVO O .HERO, PQ ELE JÁ ENTENDE
+
+        &__text{
+            font-size: 22px; //tamanho da fonte
+            line-height: 24px; //altura da linha
+            margin: 24px 0; //margem acima e abaixo do texto
+        }
+    }
+}

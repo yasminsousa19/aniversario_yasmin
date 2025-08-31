@@ -1,11 +1,22 @@
+@use 'hero';
+
 *{ // Reset styles - Seletor universal o qual essas regras abaixo vão ser aplicadas
     margin: 0; //Remove todas as margens padrão que o navegador aplica
     padding: 0; //Remove todo o enchimento que o navegador aplica
     box-sizing: border-box; //Inclui o preenchimento e a borda na largura e altura totais do elemento
+    font-family: merriweather, sans-serif;
 }
 
-.container{
+.container{ //essa classe vai centralizar o conteudo de todo site, ainda não esta dividido
     max-width: 960px; //Define a largura máxima do contêiner
     width: 100%; //Define a largura do contêiner para ocupar 100% do espaço disponível
     margin: 0 auto; //Centraliza o contêiner horizontalmente
+
+    @media(max-width: 640px){ //essa media vai ajudar a ajustar todo layout para telas de celular
+        max-width: 80%; //a largura maxima do container vai ser 80% menor em telas de celular
+    }
+
+    @media(max-width: 1024px){ //essa media vai ajudar a ajustar todo layout para telas de tablet
+        max-width: 90%; //a largura maxima do container vai ser 90% menor em telas de tablet
+    }
 }
