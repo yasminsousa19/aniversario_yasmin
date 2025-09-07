@@ -1,0 +1,57 @@
+@use 'variables';
+
+.event{
+    padding: 80px 0; //coloca uma margem em cima e em baixo de toda seção evento nesses valores
+    
+    &--infos{
+        background-image: linear-gradient(variables.$pink1, variables.$pink2);//degradê do rosa claro para o rosa escuro
+    }
+
+    &--invite{
+        background-image: linear-gradient(variables.$pink2, variables.$pink1);//degradê do rosa escuro para o rosa claro
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse; //coloca a imagem do lado esquerdo e o texto do lado direito
+        }
+    }
+
+    .container{
+        display: flex; //coloca a imagem ao lado do texto  
+        gap: 40px; //adiciona um espaço entre a imagem e o texto
+    }
+
+    &__image{//chama a classe class="event__image"
+        max-width: 360px; //tamanha maximo da imagem
+    }
+
+    &__details{ //chama a classe class="event__details"
+
+        &__title{ //chama a classe class="event__details__title"
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{ //chama a classe class="event__details__description"
+            line-height: 22px; //altura da linha
+        }
+    }
+
+    @media (max-width: 640px){
+        .container{
+            display: block; //coloca a imagem em cima do texto em telas de celular
+        }
+
+        &__image{
+            width: 100%; //faz a imagem ocupar 100% do container em telas de celular
+        }
+
+        &__details{
+            margin-right: 0; //remove a margem direita
+            margin-bottom: 16px; //adiciona uma margem abaixo dos detalhes do evento
+        }
+    }
+
+}

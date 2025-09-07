@@ -1,3 +1,5 @@
+@use '../variables';
+
 .button{
     padding: 12px;
     font-size: 18px;
@@ -7,8 +9,8 @@
     white-space: nowrap; //impede que o texto quebre em várias linhas
 
     &--primary{
-        background-color: #CF969D;
-        color: white;
+        background-color: variables.$pink1;
+        color: variables.$textColor;
     }
 
     @media (max-width: 640px){
@@ -16,10 +18,12 @@
         width: 100%;
         display: flex;
         align-items: center;
+        justify-content: center; // 👉 centraliza horizontalmente
     }
 
     @media (max-width: 1024px){
         display: flex;
         align-items: center;
+        justify-content: center; // 👉 centraliza horizontalmente
     }
 }

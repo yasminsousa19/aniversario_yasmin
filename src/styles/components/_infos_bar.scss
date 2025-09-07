@@ -1,8 +1,9 @@
+@use '../variables';
 //A pasta components contém todos os componentes reutilizáveis do projeto, ou seja, botoes, barras de informação e itens que tem
 //alguma coisa especifica picotada
 .infos-bar{ //chama a classe infos-bar, que foi criada no html
     padding: 16px 24px; //espaçamento interno
-    background-color: white;
+    background-color: variables.$textColor;
     display: flex;
     justify-content: space-between;
     line-height: 32px;
@@ -13,10 +14,10 @@
 
         &__item{ //correponde a <li class="infos-bar__info__item">
             font-size: 14px;
-            color: #000;
+            color: variables.$secondaryTextColor;
 
             b{
-                color: #000;
+                color: variables.$secondaryTextColor;
                 font-size: 18px;
                 display: block; //faz o elemento se comportar como um bloco, ou seja, ocupando toda a linha
             }

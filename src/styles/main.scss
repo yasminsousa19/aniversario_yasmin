@@ -1,6 +1,9 @@
 @use 'hero';
 @use 'components/infos_bar';
 @use 'components/buttons';
+@use 'event';
+@use 'variables';
+@use 'footer';
 
 *{ // Reset styles - Seletor universal o qual essas regras abaixo vão ser aplicadas
     margin: 0; //Remove todas as margens padrão que o navegador aplica
@@ -17,6 +20,7 @@
 
     @media(max-width: 640px){ //essa media vai ajudar a ajustar todo layout para telas de celular
         max-width: 80%; //a largura maxima do container vai ser 80% menor em telas de celular
+        text-align: center; //alinha o texto ao centro em telas de celular
     }
 
     @media(max-width: 1024px){ //essa media vai ajudar a ajustar todo layout para telas de tablet

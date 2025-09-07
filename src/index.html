@@ -4,36 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniversário Yasmin</title>
+
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                Aniversário Da Yasmin! Começa em breve!
+                Niver da Yas! 
+                <br>
+                <br>
+                Começa em: <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__info__item">
-                        <b>Localização</b>
+                        <b>Localização:</b>
+                        <br>
                         Sorocaba, São Paulo, SP
                     </li>
                     <li class="infos-bar__info__item">
-                        <b>Data</b>
-                        19 de Abril de 2026 ás 22
+                        <b>Data:</b>
+                        <br>
+                        19 de Abril de 2026 ás 19h
                     </li>
                     <li class="infos-bar__info__item">
-                        <b>Traje</b>
-                        Festa Anos 2000
+                        <b>Tema:</b>
+                        <br>
+                        Anos 2000
                     </li>
                 </ul>
-                <a href="#" class="button button--primary">Confirme sua presença</a>
+                <a href="#" class="button button--primary">Confirme sua presença!</a>
             </div>
         </div>
     </header>
+
+    <section class="event event--infos" >
+        <div class="container" data-aos="zoom-in-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Sobre o Evento</h2>
+                <p class="event__details__description">
+                    Se prepare para uma viagem no tempo!
+                    No meu aniversário deste ano, vamos voltar direto para os anos 2000 – a época do MSN, das mixtapes, dos celulares flip, das calças jeans de cintura baixa e das músicas que marcaram uma geração.
+                    Vai ter muita nostalgia, hits que todo mundo sabe cantar, looks cheios de estilo e, claro, muita diversão!
+                </p>
+            </div>
+            <img class="event__image" src="./images/looks.jpg" alt="moda anos 2000">
+        </div>
+    </section>
+    <section class="event event--invite event--image-left" >
+        <div class="container" data-aos="zoom-in-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Sua Presença é Muito Importante!</h2>
+                <p class="event__details__description">
+                    Se você recebeu esse link, é porque sua presença é muito importante pra mim!
+                    Vou comemorar meu aniversário com uma festa super especial, no clima dos anos 2000 e não seria a mesma coisa sem você.
+                    Então já separa o look, prepara o passinho e vem curtir comigo essa noite cheia de nostalgia e diversão!
+                </p>
+            </div>
+            <img class="event__image" src="./images/itens.jpg" alt="moda anos 2000">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="footer__text"><b>Feito com 💖 por Yasmin</b></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

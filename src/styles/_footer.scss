@@ -1,0 +1,7 @@
+@use 'variables';
+
+footer{
+    background-color: variables.$pink2; //cor de fundo do footer
+    padding: 20px 0; //espaçamento acima e abaixo do footer
+    text-align: center; //alinha o texto ao centro
+}
